@@ -4,17 +4,21 @@ sudo pkill steam
 echo "killing steam process"
 sleep 3
 
+
+#Replace with your steam install directory location
+SteamPath=~/.local/share/Steam/
+
 echo "removing steam account data"
-rm -r ~/.local/share/Steam/appcache
-rm -r ~/.local/share/Steam/config
-rm -r ~/.local/share/Steam/userdata
-rm -r ~/.local/share/Steam/logs
-rm ~/.local/share/Steam/legacycompat/Steam.dll
-rm ~/.local/share/Steam/steamclient.dll
-rm ~/.local/share/Steam/steamclient64.dll
-rm ~/.local/share/Steam/linux32/crashhandler.so
-rm ~/.local/share/Steam/linux32/steamclient.so
-rm ~/.local/share/Steam/linux64/crashhandler.so
-rm ~/.local/share/Steam/linux64/steamclient.so
+rm -r $SteamPath/appcache
+rm -r $SteamPath/config
+rm -r $SteamPath/userdata
+rm -r $SteamPath/logs
+rm $SteamPath/legacycompat/Steam.dll
+rm $SteamPath/steamclient.dll
+rm $SteamPath/steamclient64.dll
+rm $SteamPath/linux32/crashhandler.so
+rm $SteamPath/linux32/steamclient.so
+rm $SteamPath/linux64/crashhandler.so
+rm $SteamPath/linux64/steamclient.so
 
 read -p "Press any key to exit"
