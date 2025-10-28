@@ -6,7 +6,7 @@ sleep 3
 
 
 #Replace with your steam install directory location
-SteamPath=~/.local/share/Steam/
+SteamPath=~/.local/share/Steam
 
 echo "removing steam account data"
 rm -r $SteamPath/appcache
